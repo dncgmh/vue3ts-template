@@ -1,0 +1,22 @@
+html,
+body,
+img,
+pre,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
