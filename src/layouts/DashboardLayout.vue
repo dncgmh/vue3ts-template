@@ -3,12 +3,12 @@
     {
       path: '/',
       icon: 'fas fa-laptop',
-      name: 'Route1'
+      name: 'Dashboard'
     },
     {
-      path: '/wallet',
-      icon: 'fas fa-wallet',
-      name: 'Route2'
+      path: '/profile',
+      icon: 'fas fa-user',
+      name: 'Profile'
     }
   ];
 </script>
@@ -18,11 +18,14 @@
     <el-aside style="width: 200px; text-align: left; background-color: rgb(238, 241, 246)">
       <h4 style="padding-left: 20px">Dashboard</h4>
       <el-menu>
-        <el-menu-item v-for="route of routes" :key="route.name">
-          <i :class="route.icon"></i>
-          &nbsp;
-          <span>{{ route.name }}</span>
-        </el-menu-item>
+        <span v-for="route of routes" :key="route.name">
+          <router-link style="text-decoration: none" :to="route.path">
+            <el-menu-item>
+              <i :class="route.icon" style="padding-right: 10px"></i>
+              <span style="width: 100%" :to="route.path">{{ route.name }}</span>
+            </el-menu-item>
+          </router-link>
+        </span>
       </el-menu>
     </el-aside>
 

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-  import { reactive, ref } from '@vue/reactivity';
-
+  import { reactive } from '@vue/reactivity';
   const checkAge = (rule, value, callback) => {
     if (!value) {
       return callback(new Error('Please input the age'));

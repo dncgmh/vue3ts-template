@@ -8,8 +8,20 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: '/',
-    name: 'Dashboard',
-    component: () => import('../layouts/Layout.vue')
+    name: '/',
+    component: () => import('../layouts/DashboardLayout.vue'),
+    children: [
+      {
+        path: '/',
+        name: 'Dashboard',
+        component: () => import('../views/Dashboard/Index.vue')
+      },
+      {
+        path: '/profile',
+        name: 'Profile',
+        component: () => import('../views/Profile/Index.vue')
+      }
+    ]
   }
 ];
 
