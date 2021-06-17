@@ -1,0 +1,19 @@
+{
+  "cSpell.words": ["fontawesome", "fortawesome"],
+  "prettier.enable": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "volar.tsPlugin": true,
+  "volar.tsPluginStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "volar.codeLens.pugTools": false,
+  "volar.codeLens.scriptSetupTools": false,
+  "volar.preferredTagNameCase": "kebab",
+  "vetur.completion.autoImport": false,
+  "vetur.format.enable": false,
+  "vetur.validation.script": false
+}
